@@ -1,0 +1,48 @@
+{
+    "title": "Learning outcome",
+    "text": "The programme’s goal is to qualify graduates to independently design, plan, realise and manage digital media tasks and to assist in the implementation, administration and maintenance of digital media productions. The graduate will engage in development-oriented activities, including undertaking the analysis, ideation, design and planning, as well as realisation and management of digital media tasks, being innovative in tailoring digital media solutions to commercial conditions.Will also acquire new knowledge, skills and competencies and participate in disciplinary / interdisciplinary cooperation within digital media in connection with implementation, administration and maintenance, taking a professional approach."
+}
+
+{
+    "article": [
+        {
+            "image": "userInterfacedevelopment420x280px",
+            "name": "User Interface development",
+            "slogan": "More than just designing",
+            "outcome": [
+    "Production of user interfaces", "Development of digital solutions", "Digital media Planning", "Digital media Design"]
+        },
+        {
+            "image": "userexperience420x280px",
+            "name": "User Experience",
+            "slogan": "Life taste better with UX",
+            "outcome": [
+    "Design and development of digital experiences", "Understanding of user", "User interaction", "Testing solutions"]
+
+        },
+        {
+            "image": "contentproduction420x280px",
+            "name": "Content production",
+            "slogan": "The Web Designer Dream",
+            "outcome": [
+    "Understanding digital media", "Types of content", "Dissemination", "Use of data"]
+
+        },
+        {
+            "image": "business420x280px",
+            "name": "Business",
+            "slogan": "Exploring the design's role",
+            "outcome": [
+    "business models", "data understanding", "basis of a business existence", "value chain"]
+
+        },
+        {
+            "image": "technology420x280px",
+            "name": "Technology",
+            "slogan": "Let the artist inside you roll",
+            "outcome": [
+    "Technologies understanding in digital media", "Exploration of technologies in digital media"]
+
+        }
+    ]
+}
