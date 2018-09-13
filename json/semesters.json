@@ -48,7 +48,7 @@
                 "Plan and assess project management in team-based.",
                 "Apply and document key design processes.",
                 "Communicate and explain solutions.",
-                "Assess and apply a user-centred method.",
+                "Assess and apply a user-centred method."
             ],
             "points": "ECTS points: 15",
             "subtitle2Semester": "Digital Content",
@@ -81,7 +81,7 @@
             "electives": [
                 "Option 1: Digital Design og Indhold (taught in Danish)",
                 "Option 2: Persuasive Content (taught in English)",
-                "Option 3: FrontEnd Design (taught in English)",
+                "Option 3: FrontEnd Design (taught in English)"
             ],
            "button": false,
         },
@@ -100,4 +100,4 @@
             "button": true,
         }
     ]
-},
+}
