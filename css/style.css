@@ -112,27 +112,96 @@ main{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(10, 1fr);
+    margin:0 auto;
+    width:80%;
+
+}
+
+.curriculum{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color:saddlebrown;
+
 }
 
 .learn-outcome{
     grid-column:1/3;
-    margin:0 auto;
-    width:75%;
+
 
 
 }
+
+.h2subtitle-outcome-h2{
+    grid-column:1/3;
+    grid-row:3/4;
+    font-family: 'Playfair', serif;
+    font-size: 32px;
+
+}
+
+.textoutcome-p{
+    grid-column:1/3;
+    grid-row: 4/5;
+    font-family: 'Playfair', serif;
+    font-size: 19px;
+
+    }
+
+
 
 .core-areas{
     grid-column:1/3;
-    grid-row: 1/4;
-    margin:0 auto;
-    width:75%;
+    grid-row: 5/6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color:saddlebrown;
 
 }
 
-.effective-date{
+.text2{
     grid-column:1/3;
-    grid-row: 1/3;
+    grid-row:6/7;
+    font-family: 'Playfair', serif;
+    font-size: 19px;
+
+
+}
+
+.core-areas-div{
+
+}
+
+
+
+
+.effective-date-div{
+    grid-column:1/3;
+    grid-row: auto;
+    height: 50px;
+    color: gainsboro;
+    margin: 0;
+
+
+}
+
+.effective-date-subtitle{
+    grid-column:1/3;
+    grid-row: auto;
+    font-family: 'Playfair', serif;
+    font-size: 32px;
+    text-align: center;
+
+
+}
+
+.effective-date-text{
+    grid-column:1/3;
+    grid-row: auto;
+    font-family: 'Playfair', serif;
+    font-size: 19px;
+    text-align: center;
 
 }
 
@@ -144,42 +213,20 @@ aside{
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(8, 1fr);
+    margin:0 auto;
+    width:80%;
 
 }
 
 
-h2{
+
+.semesters-h2{
+    grid-column:1/3;
+    grid-row: 1/3;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     color:saddlebrown;
-    margin:0 auto;
-    width:90%;
-}
 
-.h2subtitle{
-    font-family: 'Playfair', serif;
-    font-size: 32px;
-    margin:0 auto;
-    width:90%;
-}
-
-.text{
-    grid-column:1/3;
-    font-family: 'Playfair', serif;
-    font-size: 17px;
-    text-align: center;
-    margin:0 auto;
-    width:90%;
-
-
-}
-
-
-.semesters{
-    grid-column:1/3;
-    grid-row: 1/3;
-    margin:0 auto;
-    width:90%;
 
 
 }
@@ -194,8 +241,10 @@ h2{
 .exams{
     grid-column:1/3;
     grid-row: 1/2;
-    margin:0 auto;
-    width:90%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color:saddlebrown;
+
 
 
 
