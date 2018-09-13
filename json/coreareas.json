@@ -1,0 +1,43 @@
+{
+    "article": [
+        {
+            "image": "userInterfacedevelopment420x280px",
+            "name": "User Interface development",
+            "slogan": "More than just designing",
+            "outcome": [
+    "Production of user interfaces", "Development of digital solutions", "Digital media Planning", "Digital media Design"]
+        },
+        {
+            "image": "userexperience420x280px",
+            "name": "User Experience",
+            "slogan": "Life taste better with UX",
+            "outcome": [
+    "Design and development of digital experiences", "Understanding of user", "User interaction", "Testing solutions"]
+
+        },
+        {
+            "image": "contentproduction420x280px",
+            "name": "Content production",
+            "slogan": "The Web Designer Dream",
+            "outcome": [
+    "Understanding digital media", "Types of content", "Dissemination", "Use of data"]
+
+        },
+        {
+            "image": "business420x280px",
+            "name": "Business",
+            "slogan": "Exploring the design's role",
+            "outcome": [
+    "business models", "data understanding", "basis of a business existence", "value chain"]
+
+        },
+        {
+            "image": "technology420x280px",
+            "name": "Technology",
+            "slogan": "Let the artist inside you roll",
+            "outcome": [
+    "Technologies understanding in digital media", "Exploration of technologies in digital media"]
+
+        }
+    ]
+}

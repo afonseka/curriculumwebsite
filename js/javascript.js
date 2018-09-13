@@ -9,6 +9,6 @@ function show(data){
     console.log(data);
     const clone = templateOutcome.cloneNode(true);
     clone.querySelector(".outcome-h2").textContent = data.title;
-    clone.querySelector(".outcome-h2").textContent = data.description;
+    clone.querySelector(".outcome-p").textContent = data.description;
     insertOutcome.appendChild(clone)
 }

@@ -1,58 +1,4 @@
 {
-    "titleOutcome": "Learning outcome",
-    "descriptionOutcome": "The programme’s goal is to qualify graduates to independently design, plan, realise and manage digital media tasks and to assist in the implementation, administration and maintenance of digital media productions. The graduate will engage in development-oriented activities, including undertaking the analysis, ideation, design and planning, as well as realisation and management of digital media tasks, being innovative in tailoring digital media solutions to commercial conditions.Will also acquire new knowledge, skills and competencies and participate in disciplinary / interdisciplinary cooperation within digital media in connection with implementation, administration and maintenance, taking a professional approach."
-},
-
-{
-    "article": [
-        {
-            "image": "userInterfacedevelopment420x280px",
-            "name": "User Interface development",
-            "slogan": "More than just designing",
-            "outcome": [
-    "Production of user interfaces", "Development of digital solutions", "Digital media Planning", "Digital media Design"]
-        },
-        {
-            "image": "userexperience420x280px",
-            "name": "User Experience",
-            "slogan": "Life taste better with UX",
-            "outcome": [
-    "Design and development of digital experiences", "Understanding of user", "User interaction", "Testing solutions"]
-
-        },
-        {
-            "image": "contentproduction420x280px",
-            "name": "Content production",
-            "slogan": "The Web Designer Dream",
-            "outcome": [
-    "Understanding digital media", "Types of content", "Dissemination", "Use of data"]
-
-        },
-        {
-            "image": "business420x280px",
-            "name": "Business",
-            "slogan": "Exploring the design's role",
-            "outcome": [
-    "business models", "data understanding", "basis of a business existence", "value chain"]
-
-        },
-        {
-            "image": "technology420x280px",
-            "name": "Technology",
-            "slogan": "Let the artist inside you roll",
-            "outcome": [
-    "Technologies understanding in digital media", "Exploration of technologies in digital media"]
-
-        }
-    ]
-},
-
-{
-    "titleDate": "Effective date",
-    "descriptionDate": "The curriculum takes effect on 1 August 2018 and applies to students enrolled on the programme after this date. However will also transfer to all students who have been admitted up until 1 August 2018."
-},
-
-{
  "section": [
         {
             "titleSemester": "1 Semester",
@@ -155,28 +101,3 @@
         }
     ]
 },
-
-{
-    "titleInter": "Internship",
-    "descriptionInter": "The student should gained development-based knowledge and an understanding of requirements and expectations of companies but also practice-related use of theories, methods and tools by the profession.Should also acquire skills needed to assess and communicate practice-oriented issues, and present possible solutions.As result the student will gather new knowledge, skills and competencies of relevance to the profession and undertake the structuring and planning of day-to-day tasks.",
-    "pointsInter": "ECTS points: 15",
-},
-{
-    "exams": [
-        {
-            "titleExam": "Exams",
-            "descriptionsExam": "In the first year of study, national programme elements equate to 60 ECTS points, of which a minimum of 45 ECTS points are included in the exam(s).The first-semester exam, which equates to 30 ECTS points, is held after the first semester. The second-semester exam, which equates to 30 ECTS points, is held after the second semester. In addition, a single exam is held in the 3th semesters, equivalent to 30 ECTS points, as well as an additional single exam in the final exam project and Internship with 15 ECTS points each.",
-            "pointsExam": "So the MMD programme corresponds to a total of 120 ECTS points.",
-        },
-      {
-            "titleExam": "Final Exam Project",
-            "descriptionsExam": "The final exam project must document the student’s understanding of practice and key applied theories and methods, based on a specific assignment within the area of the programme. The problem statement must be central to the programme / profession and be prepared by the student.  Alternatively and upon approval, the final exam project can be based on the student starting up his or her own business. The project concludes with a report and a product of a digital media production. The Report must not exceed 30 standard pages for one student + 10 standard pages for each additional group member without counting the front page, table of contents, bibliography and appendices. A standard page is 2,400 characters with spaces and footnotes. The exam will consist of an oral and a written part with an external co-examiner, where a single grade, according to the 7-point grading scale, is awarded for the written project and the oral performance.",
-            "pointsExam": "ECTS points: 15",
-        },
-    ]
-},
-
-{
-    "titleCredit": "Credit transfer rules",
-    "descriptionCredit": "Successfully completed programme elements are equivalent to the corresponding programme elements at other educational institutions. Students are obliged to provide information on completed programme elements from other Danish or foreign higher education and on any related employment. The decision is based on an academic evaluation. In case of pre-approval, the student is obliged, after completing the period of study, to document the programme elements completed during the approved period of study. If a credit transfer is granted, programme elements are deemed to have been completed"
-}
