@@ -1,6 +1,6 @@
 const templateOutcome = document.querySelector("#learn-outcome-template").content;
 const insertOutcome = document.querySelector(".learn-outcome");
-const templateOutcome = document.querySelector("#core-areas-template").content;
+const templateAreas = document.querySelector("#core-areas-template").content;
 
 window.addEventListener("load", ()=>{
   fetch("../json/outcome.json").then(res=>res.json()).then(show)
