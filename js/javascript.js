@@ -71,25 +71,33 @@ function showDate(info) {
 //------------SEMESTERS FUNCTION
 
 window.addEventListener("load", () => {
-    fetch("../json/semesters.json")
-        .then(res => {
-            res.json()
-        })
-        .then(showSemesters)
+    fetch("../json/semesters.json").then(res => res.json()).then(showSemesters)
 });
 
 function showSemesters(semester) {
     console.log(semester);
+    semester.section.forEach(showSingleSemester)
 };
 
-/*function showSingleLeadArticle(article) {
-    console.log(article)
-    const cloneAreas = templateAreas.cloneNode(true);
-    cloneAreas.querySelector(".core-areas-h2").textContent = article.name;
-    cloneAreas.querySelector(".slogan").textContent = article.slogan;
-    cloneAreas.querySelector(".outcome-areas").textContent = article.outcome;
-    insertAreas.appendChild(cloneAreas)
-}*/
+function showSingleSemester(section) {
+    console.log(section);
+    const cloneSemester = templateSemesters.cloneNode(true);
+    cloneSemester.querySelector(".semester-h2").textContent = section.titleSemester;
+    cloneSemester.querySelector(".semester-p").textContent = section.descriptionSemester;
+    cloneSemester.querySelector(".semester-h3a").textContent = section.subtitle1Semester;
+    cloneSemester.querySelector(".semester-texta").textContent = section.description1;
+    cloneSemester.querySelector("h4").textContent = section.outcomeSubtitle;
+    cloneSemester.querySelector(".skills-a").textContent = section.outcomePoints1;
+    cloneSemester.querySelector(".points").textContent = section.points;
+    cloneSemester.querySelector(".semester-h3b").textContent = section.subtitle2Semester;
+    cloneSemester.querySelector(".semester-textb").textContent = section.description2;
+    cloneSemester.querySelector(".skills-title2").textContent = section.outcomeSubtitle;
+    cloneSemester.querySelector(".skills-b").textContent = section.outcomePoints2;
+
+    insertSemester.appendChild(cloneSemester)
+
+
+}
 
 //------------INTERNSHIP FUNCTION
 
