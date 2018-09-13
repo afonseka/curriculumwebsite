@@ -119,6 +119,7 @@ main{
     margin:0 auto;
     width:75%;
 
+
 }
 
 .core-areas{
@@ -212,9 +213,7 @@ h2{
 
 
 @media only screen and (max-width: 700px){
-
-}
-
+  
 header{
 
     display: block;
@@ -235,9 +234,6 @@ nav{
     padding: 10px;
     margin-top: 15px;
 
-
-
-
 }
 
 nav a{
@@ -250,6 +246,9 @@ nav a{
 .kealounge{
     margin-top: 20%;
 }
+}
+
+
 
 
 
