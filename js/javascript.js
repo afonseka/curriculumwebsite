@@ -70,13 +70,17 @@ function showDate(info) {
 
 //------------SEMESTERS FUNCTION
 
-/*window.addEventListener("load", () => {
-    fetch("../json/semesters.json").then(res => res.json()).then(showSemesters)
+window.addEventListener("load", () => {
+    fetch("../json/semesters.json")
+        .then(res => {
+            res.json()
+        })
+        .then(showSemesters)
 });
 
 function showSemesters(semester) {
     console.log(semester);
-};*/
+};
 
 /*function showSingleLeadArticle(article) {
     console.log(article)
@@ -90,14 +94,16 @@ function showSemesters(semester) {
 //------------INTERNSHIP FUNCTION
 
 window.addEventListener("load", () => {
-    fetch("../json/intern.json").then(res => res.json()).then(showIntern)
+    fetch("../json/intern.json")
+        .then(res => res.json())
+        .then(showIntern)
 });
 
-function showIntern(intern) {
+/*function showIntern(intern) {
     console.log(intern);
     const cloneintern = templateInternship.cloneNode(true);
     cloneintern.querySelector(".edate-h2").textContent = info.titleDate;
     cloneintern.querySelector(".edate-p").textContent = info.descriptionDate;
     insertEDate.appendChild(cloneintern)
-};
-}
+};*/
+

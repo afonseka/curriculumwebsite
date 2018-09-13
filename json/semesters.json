@@ -1,11 +1,11 @@
 {
- "section": [
+    "section": [
         {
             "titleSemester": "1 Semester",
             "descriptionSemester": "The 1st Semester contains 2 program elements.",
             "subtitle1Semester": "Digital user interface",
             "descriptionSubtitle1": "This programme element covers basic principles for the design and programming of digital solutions, with a particular focus on the design and structuring of the user interface. Also  including user-centred methods for design and solution testing.",
-            "outcomeSubtitle":"Knowledge and skills acquired:",
+            "outcomeSubtitle": "Knowledge and skills acquired:",
             "outcomePoints1": [
                 "Development methods for digital media production.",
                 "Methods applied by the profession in connection with user testing.",
@@ -31,10 +31,10 @@
                 "Communicate the development process."
             ],
             "electives": [],
-            "button": false,
+            "button": false
         },
         {
-           "titleSemester": "2 Semester",
+            "titleSemester": "2 Semester",
             "descriptionSemester": "The 2 Semester contains 2 program elements.",
             "subtitle1Semester": "Digital user interface",
             "descriptionSubtitle1": "This programme element covers the design and programming of complex digital solutions with a special focus on user interfaces. Solutions are designed and programmed in teams using key methods for testing the user experience.",
@@ -62,20 +62,20 @@
                 "Key methods and theories of digital user experiences.",
                 "Project management in user-centred content production.",
                 "Communicate and justify digital solutions.",
-                "Key technologies for handling and displaying digital content.",
+                "Key technologies for handling and displaying digital content."
             ],
             "electives": [],
-            "button": false,
+            "button": false
         },
-       {
-           "titleSemester": "3 Semester",
+        {
+            "titleSemester": "3 Semester",
             "descriptionSemester": "Tha 3rd Semester programme elements equates to a total of 30 ECTS points which are organised taking into account local / regional needs and must include electives related to at least 5 ECTS points.",
             "subtitle1Semester": "Electives",
             "descriptionSubtitle1": "",
             "outcomeSubtitle": "",
             "outcomePoints1": [],
             "points": "ECTS points: 30",
-            "subtitle2Semester":"",
+            "subtitle2Semester": "",
             "descriptionSubtitle2": "",
             "outcomePoints2": [],
             "electives": [
@@ -83,21 +83,21 @@
                 "Option 2: Persuasive Content (taught in English)",
                 "Option 3: FrontEnd Design (taught in English)"
             ],
-           "button": false,
+            "button": false
         },
         {
-           "titleSemester": "4 Semester",
+            "titleSemester": "4 Semester",
             "descriptionSemester": "The 4th semester consists in arranging an internship in multimedia design field and a final exam project.",
             "subtitle1Semester": "Internship",
             "descriptionSubtitle1": "The internship is equivalent to 15 ECTS points and is concluded with a single exam.",
             "outcomeSubtitle": "",
             "outcomePoints1": [],
             "points": "ECTS points: 30",
-            "subtitle2Semester":"Final Exam Project",
+            "subtitle2Semester": "Final Exam Project",
             "descriptionSubtitle2": "The learning objectives for the final exam project are identical to the learning objectives for the programme. This exam will be the one that concludes the programme in the last semester when all other exams have been passed.",
             "outcomePoints2": [],
             "electives": [],
-            "button": true,
+            "button": true
         }
     ]
 }
