@@ -16,7 +16,6 @@
                 "Plan and conduct user tests.",
                 "Document key processes in the design and development."
             ],
-            "points": "ECTS points: 15",
             "subtitle2Semester": "Digital Content",
             "description2": "This programme element covers the design, programming and production of simple digital content solutions for selected media platforms.  Solutions are designed, programmed and produced on the basis of a content and business strategy.",
             "outcomePoints2": [
@@ -31,6 +30,7 @@
                 "Communicate the development process."
             ],
             "electives": [],
+            "points": "ECTS points: 30",
             "button": false
         },
         {
@@ -50,7 +50,7 @@
                 "Communicate and explain solutions.",
                 "Assess and apply a user-centred method."
             ],
-            "points": "ECTS points: 15",
+
             "subtitle2Semester": "Digital Content",
             "description2": "This programme element covers the design and programming of complex digital content solutions for multiple types of media. In the production of content, technologies are applied to manage and present content, and communication of data forms.",
             "outcomePoints2": [
@@ -65,6 +65,7 @@
                 "Key technologies for handling and displaying digital content."
             ],
             "electives": [],
+            "points": "ECTS points: 30",
             "button": false
         },
         {
@@ -74,7 +75,6 @@
             "description1": "",
             "outcomeSubtitle": "",
             "outcomePoints1": [],
-            "points": "ECTS points: 30",
             "subtitle2Semester": "",
             "description2": "",
             "outcomePoints2": [],
@@ -83,6 +83,7 @@
                 "Option 2: Persuasive Content (taught in English)",
                 "Option 3: FrontEnd Design (taught in English)"
             ],
+            "points": "ECTS points: 30",
             "button": false
         },
         {

@@ -14,6 +14,13 @@ const insertSemester = document.querySelector(".semesters");
 const templateInternship = document.querySelector("#intern-template").content;
 const insertInternship = document.querySelector(".intership");
 
+const templateExams = document.querySelector("#exams-template").content;
+const insertExams = document.querySelector(".exams");
+
+const templateCredits = document.querySelector("#credit-template").content;
+const insertCredits = document.querySelector(".credit");
+
+
 
 
 //------------LEARN OUTCOME FUNCTION
@@ -87,12 +94,49 @@ function showSingleSemester(section) {
     cloneSemester.querySelector(".semester-h3a").textContent = section.subtitle1Semester;
     cloneSemester.querySelector(".semester-texta").textContent = section.description1;
     cloneSemester.querySelector("h4").textContent = section.outcomeSubtitle;
-    cloneSemester.querySelector(".skills-a").textContent = section.outcomePoints1;
+
+    if (section.outcomePoints1.lenght == 0) {
+
+        cloneSemester.querySelector(".skills-a").classList.add("hide");
+
+    } else {
+        cloneSemester.querySelector(".skills-a").classList.remove("hide");
+
+        cloneSemester.querySelector(".skills-a").textContent = section.outcomePoints1;
+    }
+
     cloneSemester.querySelector(".points").textContent = section.points;
     cloneSemester.querySelector(".semester-h3b").textContent = section.subtitle2Semester;
     cloneSemester.querySelector(".semester-textb").textContent = section.description2;
     cloneSemester.querySelector(".skills-title2").textContent = section.outcomeSubtitle;
-    cloneSemester.querySelector(".skills-b").textContent = section.outcomePoints2;
+
+    if (section.outcomePoints2.lenght == 0) {
+
+        cloneSemester.querySelector(".skills-b").classList.add("hide");
+
+    } else {
+        cloneSemester.querySelector(".skills-b").classList.remove("hide");
+
+        cloneSemester.querySelector(".skills-b").textContent = section.outcomePoints2;
+    }
+
+    if (section.electives.lenght == 0) {
+        cloneSemester.querySelector(".electives").classList.add("hide");
+
+    } else {
+        cloneSemester.querySelector(".electives").classList.remove("hide");
+        cloneSemester.querySelector(".electives").textContent = section.electives;
+
+    }
+
+    if (section.button) {
+        cloneSemester.querySelector(".btn").classList.remove("hide");
+
+    } else {
+        cloneSemester.querySelector(".btn").classList.add("hide");
+
+    }
+
 
     insertSemester.appendChild(cloneSemester)
 
@@ -102,16 +146,49 @@ function showSingleSemester(section) {
 //------------INTERNSHIP FUNCTION
 
 window.addEventListener("load", () => {
-    fetch("../json/intern.json")
-        .then(res => res.json())
-        .then(showIntern)
+    fetch("../json/intern.json").then(res =>res.json()).then(showIntern)
 });
 
-/*function showIntern(intern) {
+function showIntern(intern) {
     console.log(intern);
     const cloneintern = templateInternship.cloneNode(true);
-    cloneintern.querySelector(".edate-h2").textContent = info.titleDate;
-    cloneintern.querySelector(".edate-p").textContent = info.descriptionDate;
-    insertEDate.appendChild(cloneintern)
-};*/
+    cloneintern.querySelector(".intern-h2").textContent = intern.titleInter;
+    cloneintern.querySelector(".intern-p").textContent = intern.descriptionInter;
+    insertInternship.appendChild(cloneintern)
+};
 
+
+//------------EXAMS FUNCTION
+
+window.addEventListener("load", () => {
+    fetch("../json/data.json").then(res =>res.json()).then(showExams)
+});
+
+function showExams(exams) {
+    console.log(exams);
+    exams.exams.forEach(showSingleExam)
+};
+
+function showSingleExam(sngExam){
+     console.log(sngExam);
+    const cloneExame = templateExams.cloneNode(true);
+    cloneExame.querySelector(".exame-h2").textContent = sngExam.titleExam;
+    cloneExame.querySelector(".exame-p").textContent = sngExam.descriptionsExam;
+    cloneExame.querySelector(".exame-points").textContent = sngExam.pointsExam;
+    insertExams.appendChild(cloneExame)
+}
+
+
+//------------CREDITS FUNCTION
+
+window.addEventListener("load", () => {
+    fetch("../json/credits.json").then(res =>res.json()).then(showCredits)
+});
+
+function showCredits(credits) {
+    console.log(credits);
+    const cloneCredits = templateCredits.cloneNode(true);
+    cloneCredits.querySelector(".credit-h2").textContent = credits.titleCredit;
+    cloneCredits.querySelector(".credit-p").textContent = credits.descriptionCredit;
+    insertCredits.appendChild(cloneCredits)
+};
