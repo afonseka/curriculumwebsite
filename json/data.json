@@ -1,6 +1,6 @@
 {
-    "title": "Learning outcome",
-    "text": "The programme’s goal is to qualify graduates to independently design, plan, realise and manage digital media tasks and to assist in the implementation, administration and maintenance of digital media productions. The graduate will engage in development-oriented activities, including undertaking the analysis, ideation, design and planning, as well as realisation and management of digital media tasks, being innovative in tailoring digital media solutions to commercial conditions.Will also acquire new knowledge, skills and competencies and participate in disciplinary / interdisciplinary cooperation within digital media in connection with implementation, administration and maintenance, taking a professional approach."
+    "title-outcome": "Learning outcome",
+    "description-outcome": "The programme’s goal is to qualify graduates to independently design, plan, realise and manage digital media tasks and to assist in the implementation, administration and maintenance of digital media productions. The graduate will engage in development-oriented activities, including undertaking the analysis, ideation, design and planning, as well as realisation and management of digital media tasks, being innovative in tailoring digital media solutions to commercial conditions.Will also acquire new knowledge, skills and competencies and participate in disciplinary / interdisciplinary cooperation within digital media in connection with implementation, administration and maintenance, taking a professional approach."
 }
 
 {
@@ -48,7 +48,108 @@
 }
 
 {
-    "title": "Effective date",
-    "text": "The curriculum takes effect on 1 August 2018 and applies to students enrolled on the programme after this date. However will also transfer to all students who have been admitted up until 1 August 2018."
+    "title-date": "Effective date",
+    "description-date": "The curriculum takes effect on 1 August 2018 and applies to students enrolled on the programme after this date. However will also transfer to all students who have been admitted up until 1 August 2018."
+},
+
+{
+ "section": [
+        {
+            "title-semester": "1 Semester",
+            "description-semester": "The 1st Semester contains 2 program elements.",
+            "subtitle1-semester": "Digital user interface",
+            "description-subtitle1": "This programme element covers basic principles for the design and programming of digital solutions, with a particular focus on the design and structuring of the user interface. Also  including user-centred methods for design and solution testing.",
+            "outcome-subtitle":"Knowledge and skills acquired:",
+            "outcome-points1": [
+                "Development methods for digital media production.",
+                "Methods applied by the profession in connection with user testing.",
+                "Basic principles for composition and layout.",
+                "Practice-oriented design processes and documentation forms.",
+                "Basic methods for modelling, structuring and developing digital user interfaces.",
+                "Key technologies applied, including client-server relations.",
+                "Plan and conduct user tests.",
+                "Document key processes in the design and development."
+            ],
+            "points": "ECTS points: 15",
+            "subtitle2-semester": "Digital Content",
+            "description-subtitle2": "This programme element covers the design, programming and production of simple digital content solutions for selected media platforms.  Solutions are designed, programmed and produced on the basis of a content and business strategy.",
+            "outcome-points2": [
+                "Understanding of intellectual property rights and licensing methods.",
+                "Multimedia designer’s role in the value chain.",
+                "Digital media and digital media platforms.",
+                "Key forms of expression and content.",
+                "Key technologies applied by the profession.",
+                "Basic methods and theories regarding user understanding.",
+                "Empirical data about users and situations of use.",
+                "Produce basic-level digital content.",
+                "Communicate the development process."
+            ],
+            "electives": [],
+        },
+        {
+           "title-semester": "2 Semester",
+            "description-semester": "The 2 Semester contains 2 program elements.",
+            "subtitle1-semester": "Digital user interface",
+            "description-subtitle1": "This programme element covers the design and programming of complex digital solutions with a special focus on user interfaces. Solutions are designed and programmed in teams using key methods for testing the user experience.",
+            "outcome-subtitle": "Knowledge and skills acquired:",
+            "outcome-points1": [
+                "Understanding of the company’s external environment.",
+                "Key technologies for data management to user experiences.",
+                "Key methods and tools related to project management and estimation.",
+                "Theories, tools and methods for the design and programming of digital user experiences.",
+                "Current programming paradigms for complex digital user interfaces.",
+                "Plan and assess project management in team-based.",
+                "Apply and document key design processes.",
+                "Communicate and explain solutions.",
+                "Assess and apply a user-centred method.",
+            ],
+            "points": "ECTS points: 15",
+            "subtitle2-semester": "Digital Content",
+            "description-subtitle2": "This programme element covers the design and programming of complex digital content solutions for multiple types of media. In the production of content, technologies are applied to manage and present content, and communication of data forms.",
+            "outcome-points2": [
+                "Tools and data applied in the profession.",
+                "Methods and theories applied for complex digital content production.",
+                "Methods and theories applied for the presentation of data.",
+                "Technologies used to store and exchange data.",
+                "Business models.",
+                "Key methods and theories of digital user experiences.",
+                "Project management in user-centred content production.",
+                "Communicate and justify digital solutions.",
+                "Key technologies for handling and displaying digital content.",
+            ],
+            "electives": [],
+        },
+       {
+           "title-semester": "3 Semester",
+            "description-semester": "Tha 3rd Semester programme elements equates to a total of 30 ECTS points which are organised taking into account local / regional needs and must include electives related to at least 5 ECTS points.",
+            "subtitle1-semester": "Electives",
+            "description-subtitle1": "",
+            "outcome-subtitle": "",
+            "outcome-points1": [],
+            "points": "ECTS points: 30",
+            "subtitle2-semester":"",
+            "description-subtitle2": "",
+            "outcome-points2": [],
+            "electives": [
+                "Option 1: Digital Design og Indhold (taught in Danish)",
+                "Option 2: Persuasive Content (taught in English)",
+                "Option 3: FrontEnd Design (taught in English)",
+            ],
+        },
+        {
+           "title-semester": "4 Semester",
+            "description-semester": "The 4th semester consists in arranging an internship in multimedia design field and a final exam project.",
+            "subtitle1-semester": "Internship",
+            "description-subtitle1": "The internship is equivalent to 15 ECTS points and is concluded with a single exam.",
+            "outcome-subtitle": "",
+            "outcome-points1": [],
+            "points": "ECTS points: 30",
+            "subtitle2-semester":"Final Exam Project",
+            "description-subtitle2": "The learning objectives for the final exam project are identical to the learning objectives for the programme. This exam will be the one that concludes the programme in the last semester when all other exams have been passed.",
+            "outcome-points2": [],
+            "electives": [],
+        },
+    ]
 }
+
 
