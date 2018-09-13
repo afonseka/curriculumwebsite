@@ -1,0 +1,28 @@
+{
+    "name": "New York Times",
+
+    "articles": [
+      {
+        "title": "Trump marries horse",
+        "date": "2018-09-11 10:08",
+        "author": "Jonas",
+        "showOnFrontPage": true,
+        "leadText": "<p>Read the <strong>entire</strong> story here, <em>you'll never believe what happens next</em></p>",
+        "text": "<p>yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda</p><p>yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda</p>",
+        "category": [
+            "Politics", "Gossip", "click baiting"
+        ]
+      },
+      {
+        "title": "Trump diborces horse",
+        "date": "2018-09-11 10:10",
+        "author": "Jonas",
+        "showOnFrontPage": false,
+        "leadText": "<p>Read the entire story here, you'll never believe what happens next</p>",
+        "text": "<p>yadda, <a href=\"https://www.nytimes.com/2018/09/10/climate/methane-emissions-epa.html\">yadda</a>, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda</p><p>yadda yadda, yadda, yadda <a href='https://www.nytimes.com/2018/09/10/climate/methane-emissions-epa.html'>yadda</a>, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda yadda, yadda, yadda</p>",
+        "category": [
+            "Politics", "Gossip"
+        ]
+      }
+    ]
+}
