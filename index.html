@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header >
+    <header>
         <h1>CURRICULUM</h1>
         <nav>
             <a>HOME</a>
@@ -36,20 +36,26 @@
         <h2 class="core-areas">Core Areas</h2>
         <p class="text2">The programme elements are organised under the following subject areas, which is equivalent to a total of 90 ECTS points.
         </p>
+      
         <div class="core-areas-div"></div>
-        <template>
-            <img>
-            <h2>subtitle</h2>
-            <p>slogan</p>
+        <template id="core-areas-template">
+            <div>
+            <img class="core-areas-img">
+            <h2 class="core-areas-h2">subtitle</h2>
+            <p class="slogan">slogan</p>
+
+
             <ul>
-                <li></li>
+                <li class="outcome-areas"></li>
             </ul>
+            </div>
         </template>
 
+
         <div class="effective-date-div"></div>
-        <template>
-            <h2 class="effective-date-subtitle">subtitle</h2>
-            <p class="effective-date-text"> text</p>
+        <template id="template-efective-date">
+            <h2 class="effective-date-subtitle edate-h2">subtitle</h2>
+            <p class="effective-date-text edate-p">text</p>
         </template>
     </main>
 
@@ -59,52 +65,73 @@
         <h2 class="semesters-h2">Semesters</h2>
         <div class="semesters"></div>
 
-        <template>
-            <h2>subtitle</h2>
-            <p>text</p>
-            <button>intership</button>
-            <button>final exam</button>
+        <template id="semesters-template">
+            <div>
+                <h2 class="semester-h2">subtitle</h2>
+                <p class="semester-p">text</p>
+                <h3 class="semester-h3a">element title</h3>
+                <u>
+                    <li class="electives">electives</li>
+                </u>
+                <p class="semester-texta">text form element title</p>
+                <h4>Skills title</h4>
+                <ul>
+                    <li class="skills-a">skills</li>
+                </ul>
+
+                 <button class="btn">intership</button>
+                <h3 class="semester-h3b">element title</h3>
+                <p class="semester-textb">text form element title</p>
+                <h4 class="skills-title2">Skills title</h4>
+                <ul>
+                    <li class="skills-b">skills</li>
+                </ul>
+                <p class="points">points</p>
+
+                <button class="btn">final exam</button>
+            </div>
         </template>
 
 
 
         <div class="intership"></div>
-        <template>
-            <h2>subtitle</h2>
-            <p>text</p>
+        <template id="intern-template">
+            <h2 class="intern-h2">subtitle</h2>
+            <p class="intern-p">text</p>
         </template>
 
 
 
         <div class="exams"></div>
-        <template>
-            <h2>subtitle</h2>
-            <p>text</p>
+        <template id="exams-template">
+            <h2 class="exame-h2">subtitle</h2>
+            <p class="exame-p">text</p>
+            <p class="exame-points">text</p>
         </template>
 
 
         <div class="credit"></div>
-        <template>
-            <h2>subtitle</h2>
-            <p>text</p>
+        <template id="credit-template">
+            <h2 class="credit-h2">subtitle</h2>
+            <p class="credit-p">text</p>
         </template>
 
     </aside>
 
     <footer>
-        <p class= "footer"> @curriculumprogramekea.dk, 2018 - All Right Reserved</p>
+        <p class="footer"> @curriculumprogramekea.dk, 2018 - All Right Reserved</p>
 
         <div>
-<a href="" class="fa fa-facebook"></a>
-<a href="" class="fa fa-twitter"></a>
-<a href="" class="fa fa-instagram"></a>
+            <a href="" class="fa fa-facebook"></a>
+            <a href="" class="fa fa-twitter"></a>
+            <a href="" class="fa fa-instagram"></a>
 
         </div>
 
 
 
     </footer>
-<script src="./js/javascript.js"></script>
+    <script src="./js/javascript.js"></script>
 </body>
 
 </html>
