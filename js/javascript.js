@@ -55,7 +55,7 @@ function showSingleArticle(article) {
     cloneAreas.querySelector(".core-areas-img").src = article.image;
     cloneAreas.querySelector(".core-areas-h2").textContent = article.name;
     cloneAreas.querySelector(".slogan").textContent = article.slogan;
-    cloneAreas.querySelector(".outcome-areas").textContent = article.outcome;
+    cloneAreas.querySelector(".outcome-areas").innerHTML = article.outcome;
     insertAreas.appendChild(cloneAreas)
 }
 
@@ -102,7 +102,7 @@ function showSingleSemester(section) {
     } else {
         cloneSemester.querySelector(".skills-a").classList.remove("hide");
 
-        cloneSemester.querySelector(".skills-a").textContent = section.outcomePoints1;
+        cloneSemester.querySelector(".skills-a").innerHTML = section.outcomePoints1;
     }
 
     cloneSemester.querySelector(".points").textContent = section.points;
@@ -117,7 +117,7 @@ function showSingleSemester(section) {
     } else {
         cloneSemester.querySelector(".skills-b").classList.remove("hide");
 
-        cloneSemester.querySelector(".skills-b").textContent = section.outcomePoints2;
+        cloneSemester.querySelector(".skills-b").innerHTML = section.outcomePoints2;
     }
 
     if (section.electives.lenght == 0) {
@@ -125,7 +125,7 @@ function showSingleSemester(section) {
 
     } else {
         cloneSemester.querySelector(".electives").classList.remove("hide");
-        cloneSemester.querySelector(".electives").textContent = section.electives;
+        cloneSemester.querySelector(".electives").innerHTML = section.electives;
 
     }
 
