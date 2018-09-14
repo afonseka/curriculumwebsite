@@ -14,12 +14,7 @@
             "image": "../images/userexperience420x280px.png",
             "name": "User Experience",
             "slogan": "Life taste better with UX",
-            "outcome": [
-
-                "<li>Design and development of digital experiences</li>",
-                "<li>Understanding of user</li>", "<li>User interaction",
-                "<li>Testing solutions</li>"
-            ]
+            "outcome": "<ul><li>Design and development of digital experiences</li><li>Understanding of user</li> <li>User interaction</li><li>Testing solutions</li></ul>"
 
         },
         {
