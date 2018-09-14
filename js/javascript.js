@@ -2,11 +2,11 @@ const templateOutcome = document.querySelector("#learn-outcome-template").conten
 const insertOutcome = document.querySelector(".learn-outcome");
 
 const templateAreas = document.querySelector("#core-areas-template").content;
-const insertAreas = document.querySelector(".core-areas");
+const insertAreas = document.querySelector(".core-areas-div");
 //const imgbase = "../images/";
 
 const templateEDate = document.querySelector("#template-efective-date").content;
-const insertEDate = document.querySelector(".effective-date");
+const insertEDate = document.querySelector(".effective-date-div");
 
 const templateSemesters = document.querySelector("#semesters-template").content;
 const insertSemester = document.querySelector(".semesters");
