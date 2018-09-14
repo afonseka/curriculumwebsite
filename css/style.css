@@ -266,6 +266,8 @@ aside{
 
 @media only screen and (max-width: 700px){
   
+
+
 header{
 
     display: block;
@@ -297,6 +299,25 @@ nav a{
 
 .kealounge{
     margin-top: 20%;
+}
+
+    footer{
+        display: flex;
+    }
+
+    p.footer{
+    grid-column: 1/2;
+    margin-top: 25px;
+    font-size: 11px;
+    margin-right: 11%
+}
+
+
+footer div{
+
+   margin:0 auto;
+   width:60%;
+
 }
 }
 
