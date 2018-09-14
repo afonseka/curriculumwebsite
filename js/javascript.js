@@ -3,7 +3,7 @@ const insertOutcome = document.querySelector(".learn-outcome");
 
 const templateAreas = document.querySelector("#core-areas-template").content;
 const insertAreas = document.querySelector(".core-areas-div");
-//const imgbase = "../images/";
+
 
 const templateEDate = document.querySelector("#template-efective-date").content;
 const insertEDate = document.querySelector(".effective-date-div");
@@ -52,7 +52,7 @@ function showAreas(areas) {
 function showSingleArticle(article) {
     console.log(article)
     const cloneAreas = templateAreas.cloneNode(true);
-    //cloneAreas.querySelector(".core-areas-img").src = "../images/" + article.image + ".png";
+    cloneAreas.querySelector(".core-areas-img").src = article.image;
     cloneAreas.querySelector(".core-areas-h2").textContent = article.name;
     cloneAreas.querySelector(".slogan").textContent = article.slogan;
     cloneAreas.querySelector(".outcome-areas").textContent = article.outcome;
@@ -134,6 +134,14 @@ function showSingleSemester(section) {
 
     } else {
         cloneSemester.querySelector(".btn").classList.add("hide");
+
+    }
+
+    if (section.button) {
+        cloneSemester.querySelector(".btn2").classList.remove("hide");
+
+    } else {
+        cloneSemester.querySelector(".btn2").classList.add("hide");
 
     }
 
