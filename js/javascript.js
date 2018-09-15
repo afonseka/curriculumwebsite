@@ -90,7 +90,7 @@ function showSingleSemester(section) {
     console.log(section);
     const cloneSemester = templateSemesters.cloneNode(true);
     cloneSemester.querySelector(".semester-h2").textContent = section.titleSemester;
-    cloneSemester.querySelector(".semester-p").textContent = section.descriptionSemester;
+    cloneSemester.querySelector(".semester-p").textContent = section.slogan;
     cloneSemester.querySelector(".semester-h3a").textContent = section.subtitle1Semester;
     cloneSemester.querySelector(".semester-texta").textContent = section.description1;
     cloneSemester.querySelector("h4").textContent = section.outcomeSubtitle;

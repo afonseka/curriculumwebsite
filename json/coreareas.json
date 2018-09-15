@@ -4,11 +4,7 @@
             "image": "../images/userInterfacedevelopment420x280px.png",
             "name": "User Interface development",
             "slogan": "More than just designing",
-            "outcome": [
-
-                "<li>Production of user interfaces</li>",
-                "<li>Development of digital solutions</li>",
-                "<li>Digital media Planning</li>", "<li>Digital media Design</li>"]
+            "outcome": "<ul><li>Production of user interfaces</li><li>Development of digital solutions</li><li>Digital media Planning</li><li>Digital media Design</li></ul>"
         },
         {
             "image": "../images/userexperience420x280px.png",
@@ -21,30 +17,21 @@
             "image": "../images/contentproduction420x280px.png",
             "name": "Content production",
             "slogan": "The Web Designer Dream",
-            "outcome": [
-    "<li>Understanding digital media</li>", "<li>Types of content</li>", "<li>Dissemination", "Use of data</li>"]
+            "outcome": "<ul><li>Understanding digital media</li><li>Types of content</li><li>Dissemination</li><li>Use of data</li></ul>"
 
         },
         {
             "image": "../images/business420x280px.png",
             "name": "Business",
             "slogan": "Exploring the design's role",
-            "outcome": [
-
-                "<li>business models</li>",
-                "<li>data understanding</li>",
-                "<li>basis of a business existence</li>",
-                "<li>value chain</li>"]
+            "outcome": "<ul><li>Business models</li><li>Data understanding</li><li>Basis of a business existence</li><liValue chain</li></ul>"
 
         },
         {
             "image": "../images/technology420x280px.png",
             "name": "Technology",
-            "slogan": "Let the artist inside you roll",
-            "outcome": [
-
-                "<li>Technologies understanding in digital media</li>",
-                "<li>Exploration of technologies in digital media</li>"]
+            "slogan": "Let the future inside of you roll",
+            "outcome": "<ul><li>Technologies understanding in digital media</li><li>Exploration of technologies in digital media</li></ul>"
 
         }
     ]
