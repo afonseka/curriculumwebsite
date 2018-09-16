@@ -184,6 +184,11 @@ function showSingleSemester(section) {
 
     }
 
+    if(section.id == 1){
+        cloneSemeste.querySelector(".each-semester").classList.add("1semester")
+    }
+
+
 
     insertSemester.appendChild(cloneSemester)
 
@@ -246,5 +251,25 @@ function showCredits(credits) {
 document.querySelector("#btn-1s").addEventListener("click", () => {
     console.log("working")
 
-    document.querySelectorAll("section").forEach
+    document.querySelectorAll(".each-semester").forEach(semester => {
+        console.log(semester)
+        if(!semester.classList.contains('1semester') ){
+
+            semester.classList.add("hide");
+    }else {
+            semester.classList.remove("hide")
+        }
+    })
+})
+
+document.querySelector("#btn-2s").addEventListener("click", () => {
+    console.log("working")
+})
+
+document.querySelector("#btn-3s").addEventListener("click", () => {
+    console.log("working")
+})
+
+document.querySelector("#btn-4s").addEventListener("click", () => {
+    console.log("working")
 })
