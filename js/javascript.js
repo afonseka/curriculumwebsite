@@ -33,7 +33,7 @@ function show(data) {
     console.log(data);
     const clone = templateOutcome.cloneNode(true);
     clone.querySelector(".outcome-h2").textContent = data.title;
-    clone.querySelector(".outcome-p").textContent = data.description;
+    clone.querySelector(".outcome-p").innerHTML = data.description;
     insertOutcome.appendChild(clone)
 };
 
@@ -161,7 +161,7 @@ function showIntern(intern) {
     console.log(intern);
     const cloneintern = templateInternship.cloneNode(true);
     cloneintern.querySelector(".intern-h2").textContent = intern.titleInter;
-    cloneintern.querySelector(".intern-p").textContent = intern.descriptionInter;
+    cloneintern.querySelector(".intern-p").innerHTML = intern.descriptionInter;
     insertInternship.appendChild(cloneintern)
 };
 
@@ -169,7 +169,7 @@ function showIntern(intern) {
 //------------EXAMS FUNCTION
 
 window.addEventListener("load", () => {
-    fetch("../json/data.json").then(res =>res.json()).then(showExams)
+    fetch("../json/exams.json").then(res =>res.json()).then(showExams)
 });
 
 function showExams(exams) {
@@ -181,8 +181,8 @@ function showSingleExam(sngExam){
      console.log(sngExam);
     const cloneExame = templateExams.cloneNode(true);
     cloneExame.querySelector(".exame-h2").textContent = sngExam.titleExam;
-    cloneExame.querySelector(".exame-p").textContent = sngExam.descriptionsExam;
-    cloneExame.querySelector(".exame-points").textContent = sngExam.pointsExam;
+    cloneExame.querySelector(".exame-p").innerHTML = sngExam.descriptionsExam;
+    cloneExame.querySelector(".exame-p2").innerHTML = sngExam.descriptionsExam2;
     insertExams.appendChild(cloneExame)
 }
 
