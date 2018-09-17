@@ -296,7 +296,7 @@ document.querySelector("#btn-4s").addEventListener("click", () => {
 
     document.querySelectorAll(".all-semesters").forEach(semester => {
         console.log(semester.id)
-        if(semester.id!='3S'){
+        if(semester.id!='4S'){
             semester.classList.add("hide");
     }else {
             semester.classList.remove("hide")
