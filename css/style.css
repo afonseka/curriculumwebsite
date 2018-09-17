@@ -7,7 +7,10 @@
 
 .hide{
     display: none;
+}
 
+.all-semesters.hide{
+    display: none;
 }
 
 
@@ -337,7 +340,7 @@ aside{
 
 }
 
-.each-semester{
+.all-semesters{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
