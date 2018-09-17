@@ -16,7 +16,7 @@
     <header>
         <h1><img src="images/kea-logo-danish.png"></h1>
         <nav>
-            <a href="#home">HOME</a>
+            <a href="index.html">HOME</a>
             <a href="#semesters">SEMESTERS</a>
             <a href="#intership">INTERSHIP</a>
             <a href="#exams">EXAMS</a>
@@ -54,7 +54,6 @@
 
         <div class="effective-date-div"></div>
         <template id="template-efective-date">
-
             <h2 class="effective-date-subtitle edate-h2">subtitle</h2>
             <p class="effective-date-text edate-p">text</p>
         </template>
@@ -63,8 +62,9 @@
 
     <aside>
 
-        <h2 class="semesters-h2">SEMESTERS</h2>
+        <h2 class="semesters-h2">SEMESTERS<span class="anchor" id="semesters"></span></h2>
         <div class="semesters">
+
             <button id="btn-1s" class="btn-circle"></button>
             <button id="btn-2s" class="btn-circle"></button>
             <button id="btn-3s" class="btn-circle"></button>
@@ -75,39 +75,39 @@
             <article id="semester" class="all-semesters hide">
                 <h2 class="semester-h2">subtitle</h2>
                 <div>
-                <p class="semester-slogan1">slogan</p>
-                <h3 class="semester-h3a">element title</h3>
-                <p class="semester-texta">text form element title</p>
-                <h4 class="skills-title1">Skills title</h4>
+                    <p class="semester-slogan1">slogan</p>
+                    <h3 class="semester-h3a">element title</h3>
+                    <p class="semester-texta">text form element title</p>
+                    <h4 class="skills-title1">Skills title</h4>
 
-                <section class="skills-a">
-                </section>
+                    <section class="skills-a">
+                    </section>
 
-                 <h4 class="comptences-title1">Competences title</h4>
+                    <h4 class="comptences-title1">Competences title</h4>
 
                     <section class="competences-a"></section>
 
-                <p class="points1">points</p>
-                 <button class="btn">Learn More</button>
+                    <p class="points1">points</p>
+                 <button class="btn btn-semester">Learn more</button>
                 </div>
                 <div>
-                <p class="semester-slogan2">slogan</p>
-                <h3 class="semester-h3b">element title</h3>
-                <p class="semester-textb">text form element title</p>
-                <h4 class="skills-title2">Skills title</h4>
+                    <p class="semester-slogan2">slogan</p>
+                    <h3 class="semester-h3b">element title</h3>
+                    <p class="semester-textb">text form element title</p>
+                    <h4 class="skills-title2">Skills title</h4>
 
-                <section class="skills-b">skills</section>
+                    <section class="skills-b">skills</section>
 
-                <h4 class="comptences-title2">Competences title</h4>
+                    <h4 class="comptences-title2">Competences title</h4>
 
                     <section class="competences-b">skills</section>
 
 
-                <section class="electives">electives</section>
+                    <section class="electives">electives</section>
 
-                <p class="points2">points</p>
+                    <p class="points2">points</p>
 
-                <button class="btn2">Lear More</button>
+                    <button class="btn2 btn-semester">Lear more</button>
                 </div>
             </article>
         </template>
@@ -115,25 +115,31 @@
 
 
 
-        <div class="intership"></div>
+        <div class="intership">
+            <span class="anchor" id="intership"></span>
+        </div>
         <template id="intern-template">
             <h2 class="intern-h2">subtitle</h2>
-            <p class="intern-p" id="exams">text</p>
+            <p class="intern-p" >text</p>
         </template>
 
 
 
-        <div class="exams"></div>
+        <div class="exams">
+            <span class="anchor" id="exams"></span>
+        </div>
         <template id="exams-template">
            <div>
-            <h2 class="exame-h2">subtitle</h2>
+            <h2 class="exame-h2"  >subtitle</h2>
             <p class="exame-p">text</p>
             <p class="exame-p2">text</p>
             </div>
         </template>
 
 
-        <div class="credit"></div>
+        <div class="credit">
+            <span class="anchor" id="credit"></span>
+        </div>
         <template id="credit-template">
             <h2 class="credit-h2">subtitle</h2>
             <p class="credit-p">text</p>
