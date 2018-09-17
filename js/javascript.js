@@ -64,7 +64,8 @@ function showSingleArticle(article) {
 //------------EFECTIVE DATE FUNCTION
 
 window.addEventListener("load", () => {
-    fetch("../json/date.json").then(res => res.json()).then(showDate)
+    fetch("../json/date.json").then(res => res.json()).then(showDate);
+    fetch("../json/semesters.json").then(res => res.json()).then(showSemesters);
 });
 
 
@@ -78,9 +79,6 @@ function showDate(info) {
 
 //------------SEMESTERS FUNCTION
 
-window.addEventListener("load", () => {
-    fetch("../json/semesters.json").then(res => res.json()).then(showSemesters)
-});
 
 function showSemesters(semesters) {
     //console.log(semester);
@@ -90,12 +88,15 @@ function showSemesters(semesters) {
 function showSingleSemester(semester) {
     //console.log(section);
     const cloneSemester = templateSemesters.cloneNode(true);
-    //console.log(semester.id);
+    console.log(cloneSemester.querySelector("#semester"));
 
+    const article = cloneSemester.querySelector("#semester");
 
-    cloneSemester.querySelector("#semester").id = semester.id
+    article.id = semester.id;
 
-
+    if(semester.id == "1S"){
+        article.classList.remove("hide");
+    }
 
     cloneSemester.querySelector(".semester-h2").textContent = semester.titleSemester;
     cloneSemester.querySelector(".semester-slogan1").textContent = semester.slogan;
@@ -294,23 +295,14 @@ document.querySelector("#btn-3s").addEventListener("click", () => {
 document.querySelector("#btn-4s").addEventListener("click", () => {
     console.log("working")
 
+
     document.querySelectorAll(".all-semesters").forEach(semester => {
         console.log(semester.id)
-        if(semester.id!='3S'){
+        if(semester.id!='4S'){
             semester.classList.add("hide");
     }else {
-            semester.classList.remove("hide")
+            semester.classList.remove("hide");
+
         }
-    })
-})
-
-
-window.addEventListener("load", () => {
-
-    document.querySelectorAll(".all-semesters").forEach(sem => {
-        console.log(sem.id)
-      if(sem.id!='1S'){
-            sem.classList.remove("hide");
-    }
     })
 })
