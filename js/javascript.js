@@ -27,10 +27,16 @@ const insertCredits = document.querySelector(".credit");
 //------------LEARN OUTCOME FUNCTION
 
 window.addEventListener("load", () => {
-    fetch("../json/outcome.json").then(res => res.json()).then(show)
+    fetch("../json/outcome.json").then(res => res.json()).then(showOutcome);
+    fetch("../json/coreareas.json").then(res => res.json()).then(showAreas);
+    fetch("../json/date.json").then(res => res.json()).then(showDate);
+    fetch("../json/semesters.json").then(res => res.json()).then(showSemesters);
+    fetch("../json/intern.json").then(res => res.json()).then(showIntern);
+    fetch("../json/exams.json").then(res => res.json()).then(showExams);
+    fetch("../json/credits.json").then(res => res.json()).then(showCredits);
 });
 
-function show(data) {
+function showOutcome(data) {
     //console.log(data);
     const clone = templateOutcome.cloneNode(true);
     clone.querySelector(".outcome-h2").textContent = data.title;
@@ -41,9 +47,7 @@ function show(data) {
 
 //------------CORE AREAS FUNCTION
 
-window.addEventListener("load", () => {
-    fetch("../json/coreareas.json").then(res => res.json()).then(showAreas)
-});
+
 
 function showAreas(areas) {
     //console.log(areas);
@@ -62,11 +66,6 @@ function showSingleArticle(article) {
 
 
 //------------EFECTIVE DATE FUNCTION
-
-window.addEventListener("load", () => {
-    fetch("../json/date.json").then(res => res.json()).then(showDate);
-    fetch("../json/semesters.json").then(res => res.json()).then(showSemesters);
-});
 
 
 function showDate(info) {
@@ -202,9 +201,7 @@ function showSingleSemester(semester) {
 
 //------------INTERNSHIP FUNCTION
 
-window.addEventListener("load", () => {
-    fetch("../json/intern.json").then(res => res.json()).then(showIntern)
-});
+
 
 function showIntern(intern) {
     //console.log(intern);
@@ -217,9 +214,6 @@ function showIntern(intern) {
 
 //------------EXAMS FUNCTION
 
-window.addEventListener("load", () => {
-    fetch("../json/exams.json").then(res => res.json()).then(showExams)
-});
 
 function showExams(exams) {
     //console.log(exams);
@@ -238,9 +232,6 @@ function showSingleExam(sngExam) {
 
 //------------CREDITS FUNCTION
 
-window.addEventListener("load", () => {
-    fetch("../json/credits.json").then(res => res.json()).then(showCredits)
-});
 
 function showCredits(credits) {
     //console.log(credits);

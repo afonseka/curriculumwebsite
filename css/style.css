@@ -355,6 +355,10 @@ aside{
     border-radius: 10px;
 }
 
+.btn-circle:focus {
+    background-color: #f6aec6;
+}
+
 .intership{
     grid-column:1/3;
     grid-row: 3/4;
