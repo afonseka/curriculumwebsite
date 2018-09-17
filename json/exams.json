@@ -1,0 +1,15 @@
+{
+    "exams": [
+        {
+            "titleExam": "Exams",
+            "descriptionsExam": "The MMD programme corresponds to a total of 120 ECTS points. In the first year of study, national programme elements equate to 60 ECTS points, of which a minimum of 45 ECTS points are included in the exam(s).",
+            "descriptionsExam2": "The <strong>first-semester exam</strong>, which equates to 30 ECTS points, is held after the first semester. The <strong>second-semester exam</strong>, which equates to 30 ECTS points, is held after the second semester. In addition, a <strong>single exam</strong> is held in the <strong>3th semester</strong>, equivalent to 30 ECTS points. An additional <strong>final exam</strong> in the <strong>4th semester</strong> and Internship with 15 ECTS points each."
+        },
+        {
+            "titleExam": "Final Exam Project",
+            "descriptionsExam": "The exam will consist of <strong>an oral and a written</strong> part with an external co-examiner, where a single grade, according to the 7-point grading scale, is awarded for the written project and the oral performance. The final exam project must document your <strong>understanding of practice</strong> and <strong>key applied theories</strong> and <strong>methods</strong>, based on a specific assignment within the area of the programme. The project concludes with a report and a product of a digital media production.",
+            "descriptionsExam2": "The problem statement must be <strong>central to the programme / profession</strong> and be prepared by you.  Alternatively and upon approval, the final exam project can be based on the student starting up his or her own business. The Report must not exceed <strong>30 pages for one student</strong> + 10 standard pages for each additional group member without counting the front page, table of contents, bibliography and appendices. <p><strong>Note:</strong>  A standard page is 2,400 characters with spaces and footnotes.</p>"
+
+        }
+    ]
+}

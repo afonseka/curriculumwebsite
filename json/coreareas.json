@@ -4,39 +4,34 @@
             "image": "../images/userInterfacedevelopment420x280px.png",
             "name": "User Interface development",
             "slogan": "More than just designing",
-            "outcome": [
-    "Production of user interfaces", "Development of digital solutions", "Digital media Planning", "Digital media Design"]
+            "outcome": "<ul><li>Production of user interfaces</li><li>Development of digital solutions</li><li>Digital media Planning</li><li>Digital media Design</li></ul>"
         },
         {
             "image": "../images/userexperience420x280px.png",
             "name": "User Experience",
             "slogan": "Life taste better with UX",
-            "outcome": [
-    "Design and development of digital experiences", "Understanding of user", "User interaction", "Testing solutions"]
+            "outcome": "<ul><li>Design and development of digital experiences</li><li>Understanding of user</li> <li>User interaction</li><li>Testing solutions</li></ul>"
 
         },
         {
             "image": "../images/contentproduction420x280px.png",
             "name": "Content production",
             "slogan": "The Web Designer Dream",
-            "outcome": [
-    "Understanding digital media", "Types of content", "Dissemination", "Use of data"]
+            "outcome": "<ul><li>Understanding digital media</li><li>Types of content</li><li>Dissemination</li><li>Use of data</li></ul>"
 
         },
         {
             "image": "../images/business420x280px.png",
             "name": "Business",
             "slogan": "Exploring the design's role",
-            "outcome": [
-    "business models", "data understanding", "basis of a business existence", "value chain"]
+            "outcome": "<ul><li>Business models</li><li>Data understanding</li><li>Basis of a business existence</li><li>Value chain</li></ul>"
 
         },
         {
             "image": "../images/technology420x280px.png",
             "name": "Technology",
-            "slogan": "Let the artist inside you roll",
-            "outcome": [
-    "Technologies understanding in digital media", "Exploration of technologies in digital media"]
+            "slogan": "Let the future inside of you roll",
+            "outcome": "<ul><li>Technologies understanding in digital media</li><li>Exploration of technologies in digital media</li></ul>"
 
         }
     ]
