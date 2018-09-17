@@ -11,6 +11,7 @@ const insertEDate = document.querySelector(".effective-date-div");
 const templateSemesters = document.querySelector("#semesters-template").content;
 const insertSemester = document.querySelector(".semesters");
 
+
 const templateInternship = document.querySelector("#intern-template").content;
 const insertInternship = document.querySelector(".intership");
 
@@ -81,92 +82,99 @@ window.addEventListener("load", () => {
     fetch("../json/semesters.json").then(res => res.json()).then(showSemesters)
 });
 
-function showSemesters(semester) {
+function showSemesters(semesters) {
     //console.log(semester);
-    semester.section.forEach(showSingleSemester)
+    semesters.semester.forEach(showSingleSemester)
 };
 
-function showSingleSemester(section) {
+function showSingleSemester(semester) {
     //console.log(section);
     const cloneSemester = templateSemesters.cloneNode(true);
-    cloneSemester.querySelector(".semester-h2").textContent = section.titleSemester;
-    cloneSemester.querySelector(".semester-slogan1").textContent = section.slogan;
-    cloneSemester.querySelector(".semester-slogan2").textContent = section.slogan2;
-    cloneSemester.querySelector(".semester-h3a").textContent = section.subtitle1Semester;
-    cloneSemester.querySelector(".semester-texta").textContent = section.description1;
-    cloneSemester.querySelector(".skills-title1").textContent = section.outcomeSubtitle;
-    cloneSemester.querySelector(".comptences-title1").textContent = section.compSubtitle;
-    cloneSemester.querySelector(".comptences-title2").textContent = section.compSubtitle;
+    //console.log(semester.id);
 
-    cloneSemester.querySelector(".points1").textContent = section.points1;
-    cloneSemester.querySelector(".points2").textContent = section.points2;
-    cloneSemester.querySelector(".semester-h3b").textContent = section.subtitle2Semester;
-    cloneSemester.querySelector(".semester-textb").textContent = section.description2;
-    cloneSemester.querySelector(".skills-title2").textContent = section.outcomeSubtitle;
+
+    cloneSemester.querySelector("#semester").id = semester.id
+
+
+
+    cloneSemester.querySelector(".semester-h2").textContent = semester.titleSemester;
+    cloneSemester.querySelector(".semester-slogan1").textContent = semester.slogan;
+    cloneSemester.querySelector(".semester-slogan2").textContent = semester.slogan2;
+    cloneSemester.querySelector(".semester-h3a").textContent = semester.subtitle1Semester;
+    cloneSemester.querySelector(".semester-texta").textContent = semester.description1;
+    cloneSemester.querySelector(".skills-title1").textContent = semester.outcomeSubtitle;
+    cloneSemester.querySelector(".comptences-title1").textContent = semester.compSubtitle;
+    cloneSemester.querySelector(".comptences-title2").textContent = semester.compSubtitle;
+
+    cloneSemester.querySelector(".points1").textContent = semester.points1;
+    cloneSemester.querySelector(".points2").textContent = semester.points2;
+    cloneSemester.querySelector(".semester-h3b").textContent = semester.subtitle2Semester;
+    cloneSemester.querySelector(".semester-textb").textContent = semester.description2;
+    cloneSemester.querySelector(".skills-title2").textContent = semester.outcomeSubtitle;
 
     // ------------SKILLS A
-    if (section.outcomePoints1.lenght == 0) {
+    if (semester.outcomePoints1.lenght == 0) {
 
         cloneSemester.querySelector(".skills-a").classList.add("hide");
 
     } else {
         cloneSemester.querySelector(".skills-a").classList.remove("hide");
 
-        cloneSemester.querySelector(".skills-a").innerHTML = section.outcomePoints1;
+        cloneSemester.querySelector(".skills-a").innerHTML = semester.outcomePoints1;
     }
 
 
     // ------------SKILLS B
-    if (section.outcomePoints2.lenght == 0) {
+    if (semester.outcomePoints2.lenght == 0) {
 
         cloneSemester.querySelector(".skills-b").classList.add("hide");
 
     } else {
         cloneSemester.querySelector(".skills-b").classList.remove("hide");
 
-        cloneSemester.querySelector(".skills-b").innerHTML = section.outcomePoints2;
+        cloneSemester.querySelector(".skills-b").innerHTML = semester.outcomePoints2;
     }
 
     // ------------COMPETENCES A
 
-    if (section.competencesA.lenght == 0) {
+    if (semester.competencesA.lenght == 0) {
 
         cloneSemester.querySelector(".competences-a").classList.add("hide");
 
     } else {
         cloneSemester.querySelector(".competences-a").classList.remove("hide");
 
-        cloneSemester.querySelector(".competences-a").innerHTML = section.competencesA;
+        cloneSemester.querySelector(".competences-a").innerHTML = semester.competencesA;
     }
 
 
 
     // ------------COMPETENCES B
 
-    if (section.competencesB.lenght == 0) {
+    if (semester.competencesB.lenght == 0) {
 
         cloneSemester.querySelector(".competences-b").classList.add("hide");
 
     } else {
         cloneSemester.querySelector(".competences-b").classList.remove("hide");
 
-        cloneSemester.querySelector(".competences-b").innerHTML = section.competencesB;
+        cloneSemester.querySelector(".competences-b").innerHTML = semester.competencesB;
     }
 
     //----------ELLECTIVES
 
-    if (section.electives.lenght == 0) {
+    if (semester.electives.lenght == 0) {
         cloneSemester.querySelector(".electives").classList.add("hide");
 
     } else {
         cloneSemester.querySelector(".electives").classList.remove("hide");
-        cloneSemester.querySelector(".electives").innerHTML = section.electives;
+        cloneSemester.querySelector(".electives").innerHTML = semester.electives;
 
     }
 
     //----------------BUTTONS
 
-    if (section.button) {
+    if (semester.button) {
         cloneSemester.querySelector(".btn").classList.remove("hide");
 
     } else {
@@ -176,16 +184,12 @@ function showSingleSemester(section) {
 
     //----------------BUTTONS
 
-    if (section.button) {
+    if (semester.button) {
         cloneSemester.querySelector(".btn2").classList.remove("hide");
 
     } else {
         cloneSemester.querySelector(".btn2").classList.add("hide");
 
-    }
-
-    if(section.id == 1){
-        cloneSemeste.querySelector(".each-semester").classList.add("1semester")
     }
 
 
@@ -249,12 +253,11 @@ function showCredits(credits) {
 //--------------SEMESTER CHANGE
 
 document.querySelector("#btn-1s").addEventListener("click", () => {
-    console.log("working")
+    //console.log("working")
 
-    document.querySelectorAll(".each-semester").forEach(semester => {
-        console.log(semester)
-        if(!semester.classList.contains('1semester') ){
-
+    document.querySelectorAll(".all-semesters").forEach(semester => {
+        console.log(semester.id)
+        if(semester.id!='1S'){
             semester.classList.add("hide");
     }else {
             semester.classList.remove("hide")
@@ -264,12 +267,50 @@ document.querySelector("#btn-1s").addEventListener("click", () => {
 
 document.querySelector("#btn-2s").addEventListener("click", () => {
     console.log("working")
+
+    document.querySelectorAll(".all-semesters").forEach(semester => {
+        //console.log(semester.id)
+        if(semester.id!='2S'){
+            semester.classList.add("hide");
+    }else {
+            semester.classList.remove("hide")
+        }
+    })
 })
 
 document.querySelector("#btn-3s").addEventListener("click", () => {
     console.log("working")
+
+    document.querySelectorAll(".all-semesters").forEach(semester => {
+        //console.log(semester.id)
+        if(semester.id!='3S'){
+            semester.classList.add("hide");
+    }else {
+            semester.classList.remove("hide")
+        }
+    })
 })
 
 document.querySelector("#btn-4s").addEventListener("click", () => {
     console.log("working")
+
+    document.querySelectorAll(".all-semesters").forEach(semester => {
+        console.log(semester.id)
+        if(semester.id!='3S'){
+            semester.classList.add("hide");
+    }else {
+            semester.classList.remove("hide")
+        }
+    })
+})
+
+
+window.addEventListener("load", () => {
+
+    document.querySelectorAll(".all-semesters").forEach(sem => {
+        console.log(sem.id)
+      if(sem.id!='1S'){
+            sem.classList.remove("hide");
+    }
+    })
 })

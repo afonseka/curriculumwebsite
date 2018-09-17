@@ -7,11 +7,14 @@
 
 .hide{
     display: none;
+}
 
+.all-semesters.hide{
+    display: none;
 }
 
 li{
-     list-style-type: none;
+     /*list-style-type: none;*/
 }
 
 
@@ -288,7 +291,7 @@ aside{
 
 }
 
-.each-semester{
+.all-semesters{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
