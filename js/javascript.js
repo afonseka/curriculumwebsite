@@ -255,56 +255,72 @@ function showCredits(credits) {
 
 //--------------SEMESTER CHANGE
 
-document.querySelector("#btn-1s").addEventListener("click", () => {
-    //console.log("working")
+let counter = 0;
 
-    document.querySelectorAll(".all-semesters").forEach(semester => {
-        console.log(semester.id)
-        if(semester.id!='1S'){
-            semester.classList.add("hide");
-    }else {
-            semester.classList.remove("hide")
+
+document.querySelector("#arrow-r").addEventListener("click", arrowRCliked)
+
+function arrowRCliked(){
+        counter++;
+        console.log(counter)
+        if(counter == 1){
+            document.getElementById("2S").classList.remove("hide");
+            document.getElementById("1S").classList.add("hide");
+
+        }else if(counter == 2){
+            document.getElementById("3S").classList.remove("hide");
+            document.getElementById("2S").classList.add("hide");
+            document.getElementById("1S").classList.add("hide");
+
+        }else if(counter == 3){
+
+             document.getElementById("4S").classList.remove("hide");
+            document.getElementById("3S").classList.add("hide");
+            document.getElementById("2S").classList.add("hide");
+            document.getElementById("1S").classList.add("hide");
+
+
+        }else if(counter == 4){
+
+            document.getElementById("4S").classList.add("hide");
+            document.getElementById("3S").classList.add("hide");
+            document.getElementById("2S").classList.add("hide");
+            document.getElementById("1S").classList.remove("hide");
+             counter = 0;
         }
-    })
-})
+}
 
-document.querySelector("#btn-2s").addEventListener("click", () => {
-    console.log("working")
+/*let counterLeft = 0;
 
-    document.querySelectorAll(".all-semesters").forEach(semester => {
-        //console.log(semester.id)
-        if(semester.id!='2S'){
-            semester.classList.add("hide");
-    }else {
-            semester.classList.remove("hide")
+document.querySelector("#arrow-l").addEventListener("click", arrowRClikedLeft)
+
+function arrowRClikedLeft(){
+        counterLeft++;
+        console.log(counter)
+        if(counterLeft == 1){
+            document.getElementById("4S").classList.remove("hide");
+            document.getElementById("1S").classList.add("hide");
+
+        }else if(counterLeft == 2){
+            document.getElementById("3S").classList.remove("hide");
+            document.getElementById("4S").classList.add("hide");
+            document.getElementById("1S").classList.add("hide");
+
+        }else if(counterLeft == 3){
+
+             document.getElementById("2S").classList.remove("hide");
+            document.getElementById("3S").classList.add("hide");
+            document.getElementById("4S").classList.add("hide");
+            document.getElementById("1S").classList.add("hide");
+
+
+        }else if(counterLeft == 4){
+
+            document.getElementById("4S").classList.add("hide");
+            document.getElementById("3S").classList.add("hide");
+            document.getElementById("2S").classList.add("hide");
+            document.getElementById("1S").classList.remove("hide");
+             counter = 0;
         }
-    })
-})
+}*/
 
-document.querySelector("#btn-3s").addEventListener("click", () => {
-    console.log("working")
-
-    document.querySelectorAll(".all-semesters").forEach(semester => {
-        //console.log(semester.id)
-        if(semester.id!='3S'){
-            semester.classList.add("hide");
-    }else {
-            semester.classList.remove("hide")
-        }
-    })
-})
-
-document.querySelector("#btn-4s").addEventListener("click", () => {
-    console.log("working")
-
-
-    document.querySelectorAll(".all-semesters").forEach(semester => {
-        console.log(semester.id)
-        if(semester.id!='4S'){
-            semester.classList.add("hide");
-    }else {
-            semester.classList.remove("hide");
-
-        }
-    })
-})
