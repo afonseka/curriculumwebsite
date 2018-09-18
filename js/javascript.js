@@ -27,7 +27,7 @@ const insertCredits = document.querySelector(".credit");
 //------------LEARN OUTCOME FUNCTION
 
 window.addEventListener("load", () => {
-    fetch("../json/outcome.json").then(res => res.json()).then(show)
+    fetch("outcome.json").then(res => res.json()).then(show)
 });
 
 function show(data) {
@@ -42,7 +42,7 @@ function show(data) {
 //------------CORE AREAS FUNCTION
 
 window.addEventListener("load", () => {
-    fetch("../json/coreareas.json").then(res => res.json()).then(showAreas)
+    fetch("coreareas.json").then(res => res.json()).then(showAreas)
 });
 
 function showAreas(areas) {
@@ -64,7 +64,7 @@ function showSingleArticle(article) {
 //------------EFECTIVE DATE FUNCTION
 
 window.addEventListener("load", () => {
-    fetch("../json/date.json").then(res => res.json()).then(showDate)
+    fetch("date.json").then(res => res.json()).then(showDate)
 });
 
 function showDate(info) {
@@ -78,7 +78,7 @@ function showDate(info) {
 //------------SEMESTERS FUNCTION
 
 window.addEventListener("load", () => {
-    fetch("../json/semesters.json").then(res => res.json()).then(showSemesters)
+    fetch("semesters.json").then(res => res.json()).then(showSemesters)
 });
 
 function showSemesters(semesters) {
@@ -204,7 +204,7 @@ function showSingleSemester(semester) {
 //------------INTERNSHIP FUNCTION
 
 window.addEventListener("load", () => {
-    fetch("../json/intern.json").then(res => res.json()).then(showIntern)
+    fetch("intern.json").then(res => res.json()).then(showIntern)
 });
 
 function showIntern(intern) {
@@ -219,7 +219,7 @@ function showIntern(intern) {
 //------------EXAMS FUNCTION
 
 window.addEventListener("load", () => {
-    fetch("../json/exams.json").then(res => res.json()).then(showExams)
+    fetch("exams.json").then(res => res.json()).then(showExams)
 });
 
 function showExams(exams) {
@@ -241,7 +241,7 @@ function showSingleExam(sngExam) {
 
 
 window.addEventListener("load", () => {
-    fetch("../json/credits.json").then(res => res.json()).then(showCredits)
+    fetch("credits.json").then(res => res.json()).then(showCredits)
 });
 
 function showCredits(credits) {
