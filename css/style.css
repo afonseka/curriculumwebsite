@@ -399,8 +399,14 @@ button.btn-semester{
     color: #f6aec6;
 }
 
-.btn-semester a:focus{
+.btn-semester a:hover{
+    opacity: 0.6;
 }
+
+button.btn-semester:hover{
+    opacity: 0.6;
+}
+
 
 .btn-circle {
     width: 15px;
