@@ -95,7 +95,7 @@ function showSingleSemester(semester) {
 
     article.id = semester.id;
 
-    if(semester.id == "1S"){
+    if (semester.id == "1S") {
         article.classList.remove("hide");
     }
 
@@ -255,72 +255,53 @@ function showCredits(credits) {
 
 //--------------SEMESTER CHANGE
 
-let counter = 0;
+let counter = 1;
 
 
 document.querySelector("#arrow-r").addEventListener("click", arrowRCliked)
 
-function arrowRCliked(){
-        counter++;
-        console.log(counter)
-        if(counter == 1){
-            document.getElementById("2S").classList.remove("hide");
-            document.getElementById("1S").classList.add("hide");
-
-        }else if(counter == 2){
-            document.getElementById("3S").classList.remove("hide");
-            document.getElementById("2S").classList.add("hide");
-            document.getElementById("1S").classList.add("hide");
-
-        }else if(counter == 3){
-
-             document.getElementById("4S").classList.remove("hide");
-            document.getElementById("3S").classList.add("hide");
-            document.getElementById("2S").classList.add("hide");
-            document.getElementById("1S").classList.add("hide");
+function arrowRCliked() {
+    counter++;
+    console.log(counter)
+    if (counter == 2) {
+        document.getElementById("2S").classList.remove("hide");
+        document.getElementById("1S").classList.add("hide");
+        document.getElementById("3S").classList.add("hide");
+        document.getElementById("4S").classList.add("hide");
 
 
-        }else if(counter == 4){
+    } else if (counter == 3) {
+        document.getElementById("3S").classList.remove("hide");
+        document.getElementById("2S").classList.add("hide");
+        document.getElementById("1S").classList.add("hide");
+        document.getElementById("4S").classList.add("hide");
 
-            document.getElementById("4S").classList.add("hide");
-            document.getElementById("3S").classList.add("hide");
-            document.getElementById("2S").classList.add("hide");
-            document.getElementById("1S").classList.remove("hide");
-             counter = 0;
-        }
+    } else if (counter == 4) {
+
+        document.getElementById("4S").classList.remove("hide");
+        document.getElementById("3S").classList.add("hide");
+        document.getElementById("2S").classList.add("hide");
+        document.getElementById("1S").classList.add("hide");
+        counter = 1;
+    }
 }
 
-/*let counterLeft = 0;
 
 document.querySelector("#arrow-l").addEventListener("click", arrowRClikedLeft)
 
-function arrowRClikedLeft(){
-        counterLeft++;
-        console.log(counter)
-        if(counterLeft == 1){
-            document.getElementById("4S").classList.remove("hide");
-            document.getElementById("1S").classList.add("hide");
-
-        }else if(counterLeft == 2){
-            document.getElementById("3S").classList.remove("hide");
-            document.getElementById("4S").classList.add("hide");
-            document.getElementById("1S").classList.add("hide");
-
-        }else if(counterLeft == 3){
-
-             document.getElementById("2S").classList.remove("hide");
-            document.getElementById("3S").classList.add("hide");
-            document.getElementById("4S").classList.add("hide");
-            document.getElementById("1S").classList.add("hide");
-
-
-        }else if(counterLeft == 4){
-
-            document.getElementById("4S").classList.add("hide");
-            document.getElementById("3S").classList.add("hide");
-            document.getElementById("2S").classList.add("hide");
-            document.getElementById("1S").classList.remove("hide");
-             counter = 0;
-        }
-}*/
-
+function arrowRClikedLeft() {
+        document.getElementById("4S").classList.add("hide");
+        document.getElementById("1S").classList.remove("hide");
+        document.getElementById("3S").classList.add("hide");
+        document.getElementById("2S").classList.add("hide");
+    counter--;
+    console.log(counter)
+    if (counter == 4) {
+        document.getElementById("4S").classList.remove("hide");
+    } else if (counter == 3) {
+        document.getElementById("3S").classList.remove("hide");
+    } else if (counter == 2) {
+        document.getElementById("2S").classList.remove("hide")
+        counter = 1;
+    }
+}

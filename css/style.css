@@ -426,10 +426,10 @@ i:hover{
     transform: rotate(-45deg);
 }
 
-/*.left {
+.left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
-}*/
+}
 
 
 /*.btn-circle {
@@ -451,6 +451,14 @@ i:hover{
     grid-row:2/2;
     text-align: right;
     padding-top: 20%;
+}
+
+.button-box2{
+     grid-column: 1/-1;
+    grid-row:2/2;
+    text-align: left;
+    padding-top: 20%;
+}
 }
 
 .semester-h3b{
