@@ -95,7 +95,7 @@ function showSingleSemester(semester) {
 
     article.id = semester.id;
 
-    if(semester.id == "1S"){
+    if (semester.id == "s1") {
         article.classList.remove("hide");
     }
 
@@ -264,63 +264,28 @@ function arrowRCliked(){
         counter++;
         console.log(counter)
         if(counter == 1){
-            document.getElementById("2S").classList.remove("hide");
-            document.getElementById("1S").classList.add("hide");
+            document.getElementById("s2").classList.remove("hide");
+            document.getElementById("s1").classList.add("hide");
 
         }else if(counter == 2){
-            document.getElementById("3S").classList.remove("hide");
-            document.getElementById("2S").classList.add("hide");
-            document.getElementById("1S").classList.add("hide");
+            document.getElementById("s3").classList.remove("hide");
+            document.getElementById("s2").classList.add("hide");
+            document.getElementById("s1").classList.add("hide");
 
         }else if(counter == 3){
 
-             document.getElementById("4S").classList.remove("hide");
-            document.getElementById("3S").classList.add("hide");
-            document.getElementById("2S").classList.add("hide");
-            document.getElementById("1S").classList.add("hide");
+             document.getElementById("s4").classList.remove("hide");
+            document.getElementById("s3").classList.add("hide");
+            document.getElementById("s2").classList.add("hide");
+            document.getElementById("s1").classList.add("hide");
 
 
         }else if(counter == 4){
 
-            document.getElementById("4S").classList.add("hide");
-            document.getElementById("3S").classList.add("hide");
-            document.getElementById("2S").classList.add("hide");
-            document.getElementById("1S").classList.remove("hide");
+            document.getElementById("s4").classList.add("hide");
+            document.getElementById("s3").classList.add("hide");
+            document.getElementById("s2").classList.add("hide");
+            document.getElementById("s1").classList.remove("hide");
              counter = 0;
         }
 }
-
-/*let counterLeft = 0;
-
-document.querySelector("#arrow-l").addEventListener("click", arrowRClikedLeft)
-
-function arrowRClikedLeft(){
-        counterLeft++;
-        console.log(counter)
-        if(counterLeft == 1){
-            document.getElementById("4S").classList.remove("hide");
-            document.getElementById("1S").classList.add("hide");
-
-        }else if(counterLeft == 2){
-            document.getElementById("3S").classList.remove("hide");
-            document.getElementById("4S").classList.add("hide");
-            document.getElementById("1S").classList.add("hide");
-
-        }else if(counterLeft == 3){
-
-             document.getElementById("2S").classList.remove("hide");
-            document.getElementById("3S").classList.add("hide");
-            document.getElementById("4S").classList.add("hide");
-            document.getElementById("1S").classList.add("hide");
-
-
-        }else if(counterLeft == 4){
-
-            document.getElementById("4S").classList.add("hide");
-            document.getElementById("3S").classList.add("hide");
-            document.getElementById("2S").classList.add("hide");
-            document.getElementById("1S").classList.remove("hide");
-             counter = 0;
-        }
-}*/
-
