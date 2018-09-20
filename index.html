@@ -15,12 +15,17 @@
 <body>
     <header>
         <h1><img src="images/kea-logo-danish.png"></h1>
-        <nav>
-            <a href="#core-areas">CORE AREAS</a>
-            <a href="#semesters">SEMESTERS</a>
-            <a href="#intership">INTERSHIP</a>
-            <a href="#exams">EXAMS</a>
-            <a href="#credit">CREDIT TRANSFER</a>
+        <nav class="burger-menu">
+            <div id="menu-toggle">
+                <input type="checkbox" /><span></span> <span></span> <span></span>
+                <ul class="burger-links">
+                    <li><a href="#core-areas">CORE AREAS</a></li>
+                    <li><a href="#semesters">SEMESTERS</a></li>
+                    <li><a href="#intership">INTERSHIP</a></li>
+                    <li><a href="#exams">EXAMS</a></li>
+                    <li><a href="#credit">CREDIT TRANSFER</a></li>
+                </ul>
+            </div>
         </nav>
         <img class="kealounge" src="images/kealounge1062x509px.png" alt="kealounge">
     </header>
@@ -67,12 +72,10 @@
 
         </div>
 
-                <span class= "button-box">
+        <span class="button-box">
                     <i id="arrow-r" class="right"></i>
                 </span>
-                <span class= "button-box2">
-                    <i id="arrow-l" class="left"></i>
-                </span>
+
 
 
         <template id="semesters-template">

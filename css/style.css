@@ -48,34 +48,52 @@ h1 {
 
 nav {
 
-    padding-left: 25em;
+    padding-left: 14em;
     grid-column: 2/7;
     list-style-type: none;
     position: fixed;
     background-color: white;
-    padding-top: 2em;
-    padding-bottom: 2em;
-
-
-
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 5%;
 
 }
 
+.burger-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-column-gap: 5px;
+    text-align: center;
+}
 
-nav a {
 
+.burger-links li a {
     text-align: center;
     font-family: 'Playfair display', serif;
     font-size: 14px;
     text-decoration: none;
-    padding: 25px 48px;
     color: #626262;
 }
+
+.burger-links li{
+    list-style-type: none;
+}
+
+.burger-links ul{
+    padding: 0;
+}
+
 
 
 nav a:hover {
     color: saddlebrown;
 
+}
+
+
+
+.burger-menu input {
+    display: none;
 }
 
 .anchor {
@@ -426,25 +444,6 @@ i:hover{
     transform: rotate(-45deg);
 }
 
-.left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-}
-
-
-/*.btn-circle {
-    width: 15px;
-    height: 15px;
-    border-radius: 10px;
-    background-color: #626262;
-    border: none;
-    margin-left: 1%;
-    margin-right: 1%;
-}*/
-
-/*.btn-circle:focus {
-    background-color: #f6aec6;
-}*/
 
 .button-box{
     grid-column: 1/-1;
@@ -453,13 +452,6 @@ i:hover{
     padding-top: 20%;
 }
 
-.button-box2{
-     grid-column: 1/-1;
-    grid-row:2/2;
-    text-align: left;
-    padding-top: 20%;
-}
-}
 
 .semester-h3b{
     font-family: 'Playfair', serif;
@@ -654,19 +646,83 @@ i:hover{
 
     nav {
         display: inline-flex;
-        padding: 12px;
-
-
+        padding: 0px;
 
     }
 
-    nav a {
-        font-size: 13px;
-        padding: 0px 0px;
-        text-align: center;
-        margin-left:10%;
 
+    .burger-menu #menu-toggle {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 20px;
+        top: 20px;
+        left: 80%;
+        z-index: 100;
+        user-select: none;
+    }
 
+    .burger-menu input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 100;
+
+    }
+
+    .burger-menu span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        border: solid 1px #000;
+        background-color: gainsboro;
+        border-radius: 3px;
+        z-index: 100;
+    }
+
+    .burger-menu .burger-links {
+        position: absolute;
+        width: 280px;
+        margin: -100px 0 0 -120px;
+        height: calc(100vh + 48px);
+        padding: 125px 50px 50px 50px;
+        background: #000;
+        opacity: 0.9;
+        list-style-type: none;
+        display: none;
+        z-index: 99;
+    }
+
+    .burger-menu .burger-links li {
+        padding: 10px 10px;
+        font-size: 24px;
+    }
+
+    .burger-menu input:checked ~ .burger-links {
+        display: block;
+    }
+
+    .burger-menu input:checked ~ span {
+        background-color: #fff;
+    }
+
+    .burger-menu .burger-links li a {
+        text-decoration: none;
+        font-family: 'Playfair', serif;
+        font-size: 20px;
+        color: white;
+        font-style: normal;
+        font-weight: 100;
+        opacity: 1;
+        text-align: left;
+        z-index: 110;
     }
 
     .kealounge {
@@ -695,6 +751,13 @@ i:hover{
     main{
         grid-column: 1/-1;
     }
+
+    .core-areas-img{
+    -webkit-transform: none;
+	transform: none;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
 
     aside{
         grid-column: 1/-1;

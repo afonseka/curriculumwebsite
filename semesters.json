@@ -1,7 +1,7 @@
 {
     "semester": [
         {
-            "id":"1S",
+            "id":"s1",
             "titleSemester": "1 Semester",
             "slogan": "Catch user’s attention",
             "subtitle1Semester": "Digital user interface",
@@ -21,7 +21,7 @@
             "button": false
         },
         {
-            "id":"2S",
+            "id":"s2",
             "titleSemester": "2 Semester",
             "slogan": "Create a design experience that people will never forget",
             "subtitle1Semester": "Digital user interface",
@@ -42,7 +42,7 @@
             "button": false
         },
         {
-            "id":"3S",
+            "id":"s3",
             "titleSemester": "3 Semester",
             "slogan": "Electives: Our offer",
             "subtitle1Semester": "",
@@ -62,7 +62,7 @@
             "button": false
         },
         {
-            "id":"4S",
+            "id":"s4",
             "titleSemester": "4 Semester",
              "slogan": "Time to Practice! In real life!",
             "subtitle1Semester": "Internship",
